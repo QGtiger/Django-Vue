@@ -6,5 +6,6 @@ app_name = 'backend'
 urlpatterns = [
     path(r'login', views.loginView, name="login"),
     path(r'register', views.register, name="register"),
-    path(r'islogin', views.islogin, name="islogin")
+    path(r'islogin', views.islogin, name="islogin"),
+    path('index',views.indexView, name="index"),
 ]

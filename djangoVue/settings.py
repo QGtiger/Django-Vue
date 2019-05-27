@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'backend.loginmiddleware.SimpleMiddleware'
 ]
 
 CORS_ORIGIN_WHITELIST = (
@@ -131,3 +132,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# token 过期时间
+TOKEN_EXPIRE_TIME = 20

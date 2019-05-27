@@ -43,6 +43,15 @@ service.interceptors.request.use(
 service.interceptors.response.use(
   response => {
     endLoading()
+    if(response.data.status == 401){
+      Message.error('token值无效，请重新登录')
+      // 清除token
+      localStorage.removeItem('token')
+    }
+    if(response.data.status == 402){
+      Message.error('请先重新登录')
+      router.push('/login')
+    }
     return response
   },
   error => {

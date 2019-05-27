@@ -7,6 +7,7 @@ from django.contrib.auth import login,authenticate
 from django.contrib.auth.decorators import login_required
 from .token_module import out_token, get_token
 from .models import UserToken
+from django.conf import settings
 
 
 # Create your views here.
@@ -22,7 +23,7 @@ def loginView(request):
             user = authenticate(username=username, password=password)
             if user:
                 if user.is_active:
-                    token = get_token(username, 5)
+                    token = get_token(username, settings.TOKEN_EXPIRE_TIME)
                     UserToken.objects.update_or_create(user=user, defaults={"token": token})
                     tips = '登陆成功'
                     # 'sesssionid': request.session.session_key,
@@ -69,3 +70,8 @@ def islogin(request):
             return HttpResponse(json.dumps({'tips': '您未登录', 'status': 401}))
     except Exception as e:
         print(e)
+
+
+def indexView(request):
+    if request.method == 'GET':
+        return HttpResponse(json.dumps({'tips':'这是一个简单的页面信息'}))

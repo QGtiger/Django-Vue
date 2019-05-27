@@ -13,6 +13,7 @@
     <br>
     <Button type="primary" @click="handleLogin" key="login">登录</Button>
     <Button type="primary" @click="handleIsLogin" key="islogin">测试是否登录</Button>
+    <Button type="primary" @click="handleTest" key="test">测试index</Button>
   </div>
 </template>
 
@@ -87,6 +88,19 @@ export default {
         var response = res.data;
         this.$Modal.info({
           title: '是否登陆',
+          content: response.tips
+        })
+      })
+    },
+    handleTest () {
+      request({
+        method:'get',
+        url: '/backend/index'
+      }).then(res=>{
+        let response = res.data;
+        console.log(response)
+        this.$Modal.info({
+          title: '/backend/index 路由的数据',
           content: response.tips
         })
       })
