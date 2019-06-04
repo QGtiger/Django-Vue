@@ -8,7 +8,7 @@ try:
 except ImportError:
     MiddlewareMixin = object
 
-
+# 拦截器
 class SimpleMiddleware(MiddlewareMixin):
     def process_request(self, request):
         if request.path != '/backend/login' and request.path != '/backend/register':

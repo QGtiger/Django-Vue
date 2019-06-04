@@ -136,3 +136,6 @@ STATIC_URL = '/static/'
 
 # token 过期时间
 TOKEN_EXPIRE_TIME = 20
+
+# JWT 秘钥
+SECRET_KEY = 'LightBlog'

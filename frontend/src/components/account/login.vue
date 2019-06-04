@@ -49,7 +49,7 @@ export default {
             title: "success",
             content: "登陆成功"
           });
-          localStorage.setItem('token', `${token}&${username}`)
+          localStorage.setItem('token', `${token}`)
         }else{
           this.$Modal.error({
             title: "failure",

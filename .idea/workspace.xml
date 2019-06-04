@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b79ba74-c1d6-4f0d-bf56-5581973823ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoVue/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoVue/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/account/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/account/login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/libs/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/libs/request.js" afterDir="false" />
-    </list>
+    <list default="true" id="5b79ba74-c1d6-4f0d-bf56-5581973823ef" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="469" />
     <option name="y" value="39" />
     <option name="width" value="1400" />
@@ -146,8 +139,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="469" y="39" width="1400" height="924" extended-state="1" />
-    <editor active="true" />
+    <frame x="469" y="39" width="1400" height="924" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
