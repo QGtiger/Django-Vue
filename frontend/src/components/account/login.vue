@@ -20,6 +20,7 @@
 <script>
 import { doLogin } from '@/api/login'
 import request from '@/libs/request'
+import axios from 'axios'
 export default {
   name: "HelloWorld",
   data() {
