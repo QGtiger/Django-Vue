@@ -6,7 +6,7 @@ import {
 import router from '../router/index.js'  //注意路径与文件名
 
 const service = axios.create({
-  baseURL: 'http://192.168.31.153:8000', // api 的 base_url
+  baseURL: 'http://127.0.0.1:8000', // api 的 base_url
   timeout: 50000 // request timeout
 })
 
